@@ -16,7 +16,7 @@ function comprarPista(quantidade){
     if(quantidade > quantidadePista){
         alert ('Quantidade indisponível para tipo pista');
     } else {
-        quantidadePista = quantidadePista - quantidade;
+        quantidadePista -= quantidade;
         document.getElementById('qtd-pista').textContent = quantidadePista;
         alert ('Compra realizada com sucesso!');
     }
@@ -27,7 +27,7 @@ function comprarInferior(quantidade){
     if(quantidade > quantidadeInferior){
         alert ('Quantidade indisponível para tipo cadeira inferior');
     } else {
-        quantidadeInferior = quantidadeInferior - quantidade;
+        quantidadeInferior -= quantidade;
         document.getElementById('qtd-inferior').textContent = quantidadeInferior;
         alert ('Compra realizada com sucesso!');
     }
@@ -38,7 +38,7 @@ function comprarSuperior(quantidade){
     if(quantidade > quantidadeSuperior){
         alert ('Quantidade indisponível para tipo cadeira superior');
     } else {
-        quantidadeSuperior = quantidadeSuperior - quantidade;
+        quantidadeSuperior -= quantidade;
         document.getElementById('qtd-superior').textContent = quantidadeSuperior;
         alert ('Compra realizada com sucesso!');
     }
